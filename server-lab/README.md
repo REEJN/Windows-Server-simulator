@@ -2,7 +2,7 @@
 
 Serverlab is a browser-based Windows Server 2012 R2 training game. Players connect a Ventoy USB drive and Ethernet cable, enter the BIOS, install the operating system, and configure a working Active Directory lab.
 
-**Current release:** `v1.0.0`
+**Current release:** `v1.0.1`
 
 ## Mission
 
