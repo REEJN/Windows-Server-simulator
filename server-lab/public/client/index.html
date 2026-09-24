@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <title>Serverlab — Server console</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./client.css">
+  </head>
+  <body>
+    <main class="client-shell">
+      <header class="client-toolbar" aria-label="Computer controls">
+        <div class="client-identity"><span class="client-led" id="power-led"></span><strong id="computer-name">Server console</strong><span id="power-status">Connecting…</span></div>
+        <nav aria-label="Console actions">
+          <button id="power-button" type="button" data-action="power" disabled>Power on</button>
+          <button id="bios-button" type="button" data-action="bios" disabled>BIOS <kbd>F2</kbd></button>
+          <button id="restart-button" type="button" data-action="restart" disabled>Restart</button>
+          <button id="display-button" type="button" data-action="display" aria-pressed="false" title="Switch between fitting the desktop and a readable desktop you can pan">Readable</button>
+          <button id="mission-button" type="button" data-action="mission" aria-expanded="false" aria-controls="mission-drawer">Mission <span id="mission-percent">0%</span></button>
+        </nav>
+      </header>
+      <div class="client-display" id="viewport">
+        <div id="screen-surface"><div class="screen" id="screen" tabindex="0" aria-label="Simulated Windows Server display"><div class="client-waiting">Connecting to your lab…</div></div></div>
+      </div>
+      <footer class="client-status"><span id="hardware-status">Hardware is controlled from the lab.</span><span>Windows Server 2012 R2 · Simulation</span></footer>
+    </main>
+    <div id="mission-layer"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./client.js"></script>
+  </body>
+</html>
