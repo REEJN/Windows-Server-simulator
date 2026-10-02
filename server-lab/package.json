@@ -1,1 +1,11 @@
-{"name":"serverlab-simulator","version":"1.0.1","private":true,"type":"module","scripts":{"start":"node server.mjs","check":"node --check dist/app.js && node --check dist/os.js && node --check dist/engine.js","test":"node --test tests/*.test.mjs"}}
+{
+  "name": "serverlab-simulator",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/os.js && node --check dist/engine.js && node --check dist/network.js && node --check dist/browser.js && node --check dist/mobile.js",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

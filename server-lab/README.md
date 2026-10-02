@@ -2,20 +2,32 @@
 
 Serverlab is a browser-based Windows Server 2012 R2 training game. Players connect a Ventoy USB drive and Ethernet cable, enter the BIOS, install the operating system, and configure a working Active Directory lab.
 
-**Current release:** `v1.0.1`
+**Current release:** `v1.1.0`
 
-## Mission
+## Curriculum Labs
 
-The guided mission covers:
+Serverlab includes three hands-on educational labs:
 
-- Connecting simulated USB, Ethernet, and power hardware
-- Selecting Ventoy as the BIOS boot device
-- Installing Windows Server 2012 R2 Standard with a GUI
-- Installing AD DS and promoting a new forest
-- Creating an organizational unit and user account
-- Creating a folder, enabling sharing, granting share permissions, and opening the Security tab
-
-Players can also explore Server Manager, File Explorer, network settings, event history, draggable windows, context menus, and a small simulated PowerShell command set.
+- **Lab 01: System Administration & AD DS**
+  - Connecting simulated USB, Ethernet, and power hardware
+  - Selecting Ventoy as the BIOS boot device
+  - Installing Windows Server 2012 R2 Standard with a GUI
+  - Installing AD DS and promoting a new forest
+  - Creating an organizational unit and user account
+  - Creating a folder, enabling sharing, granting Full Control permissions, and visiting the Security tab
+- **Lab 02: Network & Router Lab**
+  - Accessing the TP-Link TL-WR841N management interface at `192.168.1.1` via Internet Explorer
+  - Verifying simulated mobile data WAN uplink and LAN configuration
+  - Configuring router DHCP server address pool (`192.168.1.100` to `192.168.1.199`)
+  - Configuring WLAN SSID (`SERVERLAB-WIFI`) and WPA2-PSK passphrase
+  - Connecting the client smartphone handset to Wi-Fi and verifying DHCP lease
+  - Performing ping connectivity checks to router gateway (`192.168.1.1`) and server (`192.168.1.10`)
+- **Lab 03: Security & Monitoring**
+  - Renaming computer and configuring static IPv4 and DNS (`127.0.0.1`)
+  - Turning off Windows Firewall profiles per classroom exercise instructions
+  - Creating Active Directory Security Groups and assigning domain users
+  - Enabling Remote Desktop with Network Level Authentication (NLA) and testing via `mstsc`
+  - Monitoring running server processes in Task Manager and inspecting services in Services console
 
 ## Run locally
 
